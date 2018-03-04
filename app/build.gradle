@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    useLibrary  'org.apache.http.legacy'
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+    defaultConfig {
+        applicationId "android.venky.com.toggle"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22+'
+    compile 'org.mongodb:mongodb-driver:3.2.1'
+    compile 'ai.api:sdk:1.7.6@aar'
+
+    // api.ai SDK dependencies
+    compile 'com.android.support:cardview-v7:22+'
+    compile 'com.wdullaer:materialdatetimepicker:2.1.1'
+    // already includes 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.github.brnunes:swipeablerecyclerview:1.0.1'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'commons-io:commons-io:2.4'
+
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile project(':libsvm-3.1')
+    //chart dependencies
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    // firebase
+    compile 'com.firebase:firebase-client-android:2.5.0+'
+    compile 'pl.pawelkleczkowski.customgauge:CustomGauge:1.0.1'
+
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'me.drakeet.materialdialog:library:1.2.8'
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.6@aar') {
+        transitive = true
+    }
+
+
+
+    compile('com.mikepenz:aboutlibraries:5.0.0@aar') {
+        transitive = true
+    }
+    compile('com.mikepenz:materialdrawer:3.0.3@aar') {
+        transitive = true
+    }
+    compile 'com.mikepenz:octicons-typeface:2.2.0@aar'
+    compile "com.daimajia.swipelayout:library:1.2.0@aar"
+
+    compile 'com.github.mrengineer13:snackbar:1.2.0'
+
+
+
+
+}

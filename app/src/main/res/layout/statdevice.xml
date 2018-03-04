@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        android:layout_below="@id/gauge1"
+        android:layout_marginLeft="40dp">
+
+        <TableRow>
+            <TextView
+
+                android:text="Name :"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/dev"
+                android:paddingLeft="50dp"
+               />
+            <TextView
+                android:id="@+id/devname"
+                android:textSize="15dp"
+
+
+                android:textColor="#FFFFFF"
+                android:textStyle="italic"
+                android:paddingRight="50dp"
+                />
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+
+                android:text="Location :"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="50dp"
+                android:id="@+id/location"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/locationval"
+                android:textSize="15dp"
+
+                android:textColor="#FFFFFF"
+                android:textStyle="italic"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                />
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+
+                android:text="Power :"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="50dp"
+                android:id="@+id/power"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/powerval"
+                android:textSize="15dp"
+
+                android:textColor="#FFFFFF"
+                android:textStyle="italic"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/table"
+        android:background="#FFFFFF"></View>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_container"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_alignParentTop="true"
+    android:id="@+id/view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="Bulb"
+                android:textColor="#1b1b1b"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="32dp"
+                android:paddingLeft="120dp">
+
+                <TableRow>
+                    <ImageView
+                        android:src="@drawable/ic_power"
+                        android:layout_column="1"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp" />
+                    <TextView
+                        android:text="Power: "
+                        android:textStyle="italic"
+                        android:textSize="9dp"
+                        android:textColor="#1b1b1b"
+                        android:paddingTop="7dp"/>
+                    <TextView
+                        android:id="@+id/power"
+                        android:textSize="9dp"
+                        android:textColor="#1b1b1b"
+                        android:text="lol"
+                        android:textStyle="italic"
+                        android:paddingLeft="15dp"/>
+                </TableRow>
+
+
+                <TableRow>
+                    <ImageView
+                        android:src="@drawable/ic_time"
+                        android:layout_width="20dp"
+                        android:layout_column="1"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:text="Duration: "
+                        android:textStyle="italic"
+                        android:textSize="9dp"
+                        android:textColor="#1b1b1b"
+                        android:paddingTop="4dp"/>
+                    <TextView
+                        android:id="@+id/duration"
+                        android:textSize="9dp"
+                        android:textColor="#1b1b1b"
+                        android:textStyle="italic"
+                        android:text="lolp"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="15dp"  />
+                </TableRow>
+
+
+                <TableRow>
+                    <ImageView
+                        android:src="@drawable/ic_timer"
+                        android:layout_width="20dp"
+                        android:layout_column="1"
+                        android:paddingTop="2dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:text="Last On: "
+                        android:textStyle="italic"
+                        android:textSize="9dp"
+                        android:textColor="#1b1b1b"
+                        android:paddingTop="5dp"/>
+                    <TextView
+                        android:id="@+id/laston"
+                        android:textSize="9dp"
+                        android:text="lols"
+                        android:textColor="#1b1b1b"
+                        android:textStyle="italic"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="15dp"/>
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
